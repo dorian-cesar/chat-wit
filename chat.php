@@ -37,7 +37,7 @@ $url = "https://api.openai.com/v1/chat/completions";
 $data = [
     "model" => "gpt-3.5-turbo",
     "messages" => [
-        ["role" => "system", "content" => "Eres un asistente que solo responde preguntas relacionadas con la plataforma MasGPS. Siempre usa 'MasGPS' en las respuestas, incluso si el usuario menciona 'Navixy'. Siempre responde  en formato html"],
+        ["role" => "system", "content" => "Eres un asistente de navixy.com que solo responde preguntas relacionadas con la plataforma MasGPS. Siempre usa 'MasGPS' en las respuestas, incluso si el usuario menciona 'Navixy'. Siempre responde  en formato html. Si la respuesta incluye varios item, muestralo en forma de lista"],
         ["role" => "user", "content" => $message],
     ]
 ];
